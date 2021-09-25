@@ -1,0 +1,292 @@
+/* BODY */
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body.products {
+	height: 3000px;
+}
+
+body.reviews {
+	height: 1400px;
+}
+
+/* NAV */
+/*
+div#nav {
+	background-color: #4a4a4a;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.nav-item {
+	border: 2px solid #00c26e;
+	padding: 3px;
+	border-radius:10px;
+	background-color: #2f2f2f;
+	box-shadow: 0 0 10px black;
+}
+
+.nav-item:hover {
+	box-shadow: 0 0 5px white;
+}
+
+#logo {
+	font-weight: bold;
+	border: 3px solid #00c26e;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #2f2f2f;
+	box-shadow: 0 0 10px black;
+}
+
+#logo:hover {
+	box-shadow: 0 0 5px white;
+}
+
+.nav-item.button {
+	margin-left: 10px;
+}
+
+.nav-item p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: white;
+}
+
+#float-right {
+	margin-left: auto;
+}
+*/
+/* CONTENT */
+
+.main {
+	background-image: url("img/binary-code-green.jpg");
+	min-height: 100%;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 40% 10% 10% 10% 10% 10% 10%;
+	grid-gap: 3px;
+}
+
+.container {
+	grid-column: 2 / 5;
+}
+
+.container#main-img {
+	display: flex;
+	justify-content: center;
+	padding-top: 5%;
+}
+
+#main-img img {
+	box-shadow: 0 0 50px black;
+	border-radius: 5px;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.content {
+	margin-top: 25px;
+	padding-top: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 0 50px black;
+	border-radius: 5px;
+	grid-row: 2 / 7;
+	grid-column: 2 / 5;
+	width: 100%;
+	text-align: center;
+	border: 3px solid #00c26e;
+	border-radius: 5px;
+}
+
+.content * {
+	margin-left: 25px;
+}
+
+.content h1 {
+	margin-right: 25px;
+	font-size: 35px;
+}
+
+.content-text {
+	text-align: left;
+	font-size: 25px;	
+}
+
+	/* PRODUCT CARDS */
+
+	#product-content {
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-gap: 5px;
+	}
+
+	#review-content {
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-gap: 5px;
+	}
+
+	#cart-content {
+		grid-template-rows: 100px 500px 100px;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-gap: 5px;
+	}
+
+	.card {
+		height: 400px;
+	}
+
+	.card#cart {
+		height: 100%;
+		margin: 0;
+	}
+
+	#new, #one {
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+	}
+
+	#promotions, #two, #cart {
+		grid-row: 2 / 3;
+		grid-column: 2 / 3;
+	}
+
+	#laptops, #three {
+		grid-row: 3 / 4;
+		grid-column: 2 / 3;
+	}
+
+	#mice {
+		grid-row: 4 / 5;
+		grid-column: 2 / 3;
+	}
+
+	#hardware {
+		grid-row: 5 / 6;
+		grid-column: 2 / 3;
+	}
+
+	#software {
+		grid-row: 6 / 7;
+		grid-column: 2 / 3;
+	}
+
+
+/* SIDE CARDS */
+
+.side-card-container#one {
+	grid-column: 1/2;
+	grid-row: 2/7;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+}
+
+.side-card-container#two {
+	grid-column: 5/6;
+	grid-row: 2/7;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+}
+
+.side-card-container#one .side-card {
+	background-color: white;
+	border: 3px solid #00c26e;
+	border-radius: 5px;
+	border-left: 0;
+	width: 200px;
+	height: 100px;
+	padding-left: 10px;
+	margin-right: auto;
+	box-shadow: 0 0 50px black;
+	font-weight: bold;
+	text-align: center;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+.side-card-container#two .side-card {
+	background-color: white;
+	border: 3px solid #00c26e;
+	border-radius: 5px;
+	border-right: 0;
+	width: 200px;
+	height: 200px;
+	padding-left: 10px;
+	margin-left: auto;
+	box-shadow: 0 0 50px black;
+	font-weight: bold;
+	text-align: center;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+.side-card a {
+	text-decoration: none;
+	color: black;
+}
+
+.side-card p {
+	margin-top: 38px;
+}
+
+/* HELP */
+
+#help {
+	background-color: white;
+	position: fixed;
+	top: 150px;
+	right: 0;
+	border: 3px solid #00c26e;
+	border-right: 0;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 0 50px black;
+	padding-left: 10px
+	
+}
+
+#help a {
+	text-decoration: none;
+	color: black;
+}
+
+#help:hover a {
+	box-shadow: 0 0 20px white;
+}
+
+/* ALL */
+
+* {
+	font-family: monaco, monospace;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #2f2f2f;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+footer p {
+	margin: 0;
+	color: white;
+}
+
