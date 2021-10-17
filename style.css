@@ -256,17 +256,45 @@ div#nav {
 	border-right: 0;
 	border-radius: 5px 0 0 5px;
 	box-shadow: 0 0 50px black;
-	padding-left: 10px
-	
+	padding-left: 10px;
 }
 
-#help a {
+#help a, #crypto a {
 	text-decoration: none;
 	color: black;
 }
 
-#help:hover a {
+#help:hover a, #crypto:hover a {
 	box-shadow: 0 0 20px white;
+}
+
+
+#crypto {
+	background-color: white;
+	position: fixed;
+	top: 150px;
+	left: 0;
+	border: 3px solid #00c26e;
+	border-left: 0;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 0 0 50px black;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#crypto_info {
+	padding: 10px;
+}
+
+#crypto_info img {
+	max-width: 150px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	margin-left: 35px;
+}
+
+.hide {
+	display: none;
 }
 
 /* ALL */
